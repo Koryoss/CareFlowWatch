@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF000001AA000001AA0001AA /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FB5E812F753AE6009D3BA7 /* Models.swift */; };
+		CF000002AA000002AA0002AA /* DailyContextManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FB5E7F2F753AE6009D3BA7 /* DailyContextManager.swift */; };
+		CF000003AA000003AA0003AA /* CareFlowAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FB5E7E2F753AE6009D3BA7 /* CareFlowAPIClient.swift */; };
+		CF000004AA000004AA0004AA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FB5E802F753AE6009D3BA7 /* Extensions.swift */; };
 		F37450972F753FFE001F57B5 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FB5E812F753AE6009D3BA7 /* Models.swift */; };
 		F37450E92F760D95001F57B5 /* WatchConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37450E22F760D95001F57B5 /* WatchConnectivityManager.swift */; };
 		F37451172F761076001F57B5 /* DailyContextManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FB5E7F2F753AE6009D3BA7 /* DailyContextManager.swift */; };
@@ -16,10 +20,6 @@
 		F374511C2F76114C001F57B5 /* DailyContextManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FB5E7F2F753AE6009D3BA7 /* DailyContextManager.swift */; };
 		F374511D2F761153001F57B5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FB5E802F753AE6009D3BA7 /* Extensions.swift */; };
 		F374511E2F761158001F57B5 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FB5E812F753AE6009D3BA7 /* Models.swift */; };
-		CF000001AA000001AA0001AA /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FB5E812F753AE6009D3BA7 /* Models.swift */; };
-		CF000002AA000002AA0002AA /* DailyContextManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FB5E7F2F753AE6009D3BA7 /* DailyContextManager.swift */; };
-		CF000003AA000003AA0003AA /* CareFlowAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FB5E7E2F753AE6009D3BA7 /* CareFlowAPIClient.swift */; };
-		CF000004AA000004AA0004AA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FB5E802F753AE6009D3BA7 /* Extensions.swift */; };
 		F3B46C252F7654F00097CDAC /* LocationTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B46C242F7654F00097CDAC /* LocationTracker.swift */; };
 		F3B46C262F7654F00097CDAC /* LocationTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B46C242F7654F00097CDAC /* LocationTracker.swift */; };
 		F3FB5E472F7532C3009D3BA7 /* CareFlowWatch Watch App Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F3FB5E462F7532C3009D3BA7 /* CareFlowWatch Watch App Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -133,26 +133,6 @@
 			path = CareFlowWatchTests;
 			sourceTree = "<group>";
 		};
-		F3FB5E102F753259009D3BA7 /* CareFlowWatchUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = CareFlowWatchUITests;
-			sourceTree = "<group>";
-		};
-		F3FB5E252F7532BD009D3BA7 /* CareFlowWatch Watch App */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "CareFlowWatch Watch App";
-			sourceTree = "<group>";
-		};
-		F3FB5E332F7532C3009D3BA7 /* CareFlowWatch Watch AppTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "CareFlowWatch Watch AppTests";
-			sourceTree = "<group>";
-		};
-		F3FB5E3D2F7532C3009D3BA7 /* CareFlowWatch Watch AppUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "CareFlowWatch Watch AppUITests";
-			sourceTree = "<group>";
-		};
 		F3FB5E4A2F7532C3009D3BA7 /* CareFlowWatch Watch App Watch App */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "CareFlowWatch Watch App Watch App";
@@ -243,10 +223,6 @@
 				F3FB5E7D2F753A6D009D3BA7 /* Shared */,
 				F3FB5DF82F753256009D3BA7 /* CareFlowWatch */,
 				F3FB5E062F753259009D3BA7 /* CareFlowWatchTests */,
-				F3FB5E102F753259009D3BA7 /* CareFlowWatchUITests */,
-				F3FB5E252F7532BD009D3BA7 /* CareFlowWatch Watch App */,
-				F3FB5E332F7532C3009D3BA7 /* CareFlowWatch Watch AppTests */,
-				F3FB5E3D2F7532C3009D3BA7 /* CareFlowWatch Watch AppUITests */,
 				F3FB5E4A2F7532C3009D3BA7 /* CareFlowWatch Watch App Watch App */,
 				F3FB5E582F7532C9009D3BA7 /* CareFlowWatch Watch App Watch AppTests */,
 				F3FB5E622F7532C9009D3BA7 /* CareFlowWatch Watch App Watch AppUITests */,
@@ -344,9 +320,6 @@
 			dependencies = (
 				F3FB5E0F2F753259009D3BA7 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				F3FB5E102F753259009D3BA7 /* CareFlowWatchUITests */,
-			);
 			name = CareFlowWatchUITests;
 			packageProductDependencies = (
 			);
@@ -368,9 +341,6 @@
 			dependencies = (
 				F3FB5E492F7532C3009D3BA7 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				F3FB5E252F7532BD009D3BA7 /* CareFlowWatch Watch App */,
-			);
 			name = "CareFlowWatch Watch App";
 			packageProductDependencies = (
 			);
@@ -391,9 +361,6 @@
 			dependencies = (
 				F3FB5E322F7532C3009D3BA7 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				F3FB5E332F7532C3009D3BA7 /* CareFlowWatch Watch AppTests */,
-			);
 			name = "CareFlowWatch Watch AppTests";
 			packageProductDependencies = (
 			);
@@ -413,9 +380,6 @@
 			);
 			dependencies = (
 				F3FB5E3C2F7532C3009D3BA7 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				F3FB5E3D2F7532C3009D3BA7 /* CareFlowWatch Watch AppUITests */,
 			);
 			name = "CareFlowWatch Watch AppUITests";
 			packageProductDependencies = (
